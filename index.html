@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Global grayscale filter for demo image below the header */
+    img.demo {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+  </style>
+</head>
+<body class="dark-mode">
+  <header>
+    <nav class="global-nav">
+      <a href="#privacy" class="logo">
+        <img src="apple-logo.svg" alt="Apple Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#terms">Terms of Use</a></li>
+        <li><a href="#legal">Legal</a></li>
+      </ul>
+      <button id="dark-mode-toggle"></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero" id="privacy">
+      <h1>Privacy Policy</h1>
+      <img src="https://picsum.photos/500?random=hero" alt="Random square image" width="500" height="500">
+      <p>Your privacy is important to us. This policy explains how we use your personal information.</p>
+    </section>
+
+
+
+    <!-- Horizontally scrollable gallery -->
+    <section class="scrollable-gallery">
+      <!-- [Images omitted for brevity; same as before] -->
+      <img src="https://picsum.photos/200?random=1" alt="Random square image 1" width="200" height="200">
+      <!-- ... up to random 20 ... -->
+      <img src="https://picsum.photos/200?random=20" alt="Random square image 20" width="200" height="200">
+    </section>
+    <!-- Parallax Section -->
+    <section class="parallax-section">
+      <div class="parallax-content">
+        <h2>Parallax Scrolling</h2>
+        <p>
+          Parallax scrolling is a website trend where the background moves at a different speed than the foreground.
+        </p>
+      </div>
+    </section>
+    <!-- Content Section: Introduction + JSON Loaded Content -->
+    <section class="content" id="content-section">
+      <article>
+        <h2>Introduction</h2>
+        <p>We committed to protecting your privacy. In this document, we outline the types of data we collect and how we use it.</p>
+      </article>
+      <!-- This container will be populated dynamically from JSON -->
+      <div id="json-content"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms of Use</a>
+      <a href="#legal">Legal</a>
+      <a href="#">Site Map</a>
+    </div>
+    <p>&copy; 2023 Apple Inc. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal Container: Displays four versions of the clicked image -->
+  <div id="image-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="gray20" src="" alt="Grayscale 10%" style="filter: grayscale(10%)">
+      <img id="gray40" src="" alt="Grayscale 40%" style="filter: grayscale(40%)">
+      <img id="gray60" src="" alt="Grayscale 80%" style="filter: grayscale(80%)">
+      <img id="gray80" src="" alt="Grayscale 120%" style="filter: grayscale(120%)">
+    </div>
+  </div>
+
+  <!-- Scroll-to-top button -->
+  <button id="scroll-to-top" title="Go to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
